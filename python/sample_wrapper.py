@@ -32,14 +32,13 @@ if __name__ == '__main__':
                 'Name': 'My Awesome TShirt Store',
                 'URL': 'https://myTShirtStoreOnline.com/'
         }	
-	http_code,response_json = ventata_api.post('store', data)
-
-        #get the API key associated with your store
-	STORE_API_KEY = response_json[0]['ApiKey']
-	
+	http_code,response_json = ventata_api.post('store', data)	
 	print('Created product: (press Enter to continue)')
 	print(json.dumps(response_json, indent=4))
 	raw_input()
+
+        #get the API key associated with your store
+	STORE_API_KEY = response_json[0]['ApiKey']
 
         #use that new store API key to perform the store related requests
 	ventata_api = VentataAPI(STORE_API_KEY)
@@ -56,7 +55,6 @@ if __name__ == '__main__':
 		'DateCreated': '/Date(1338874208950+0000)/',
 		'DateExpires': '/Date(-62135596800000+0000)/',
 		'Description': 'The most amazing Nirvana t-shirt anyone will ever own',
-		'LastEvaluation': '/Date(1338874208950+0000)/',
 		'MANUCODE': 'TSHIRT120',
 		'MaxPrice': 0,
 		'MinPrice': 0,
@@ -91,10 +89,14 @@ if __name__ == '__main__':
 				'PricePaid': 10
 			}
 		],
-		'DateCreated': '/Date(1224043200000)/'
+		'DateCreated': '/Date(1224043200000+0000)/'
 	}
 	http_code,response_json = ventata_api.post('order', data)
 	print('New order: (press Enter to continue)')
 	print(json.dumps(response_json, indent=4))
 	raw_input()
 
+	#get a new price
+	http_code,response_json = ventata_api.get('product/' + product_id + '/price')
+	new_price = response_json[0]['Price']
+	print(new_price)
