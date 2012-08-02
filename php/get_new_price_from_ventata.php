@@ -1,6 +1,6 @@
 
 <?php
-function send_product_to_ventata($product)
+function send_product_to_ventata($product_id)
 {   
 	//enter your ventata store API key here
 	$storeApiKey = '';
@@ -23,17 +23,16 @@ function send_product_to_ventata($product)
 	
 	//and send it via curl
     $ch = curl_init();
-    $url = "https://api.ventata.com/product?ApiKey=" . $apiKey;    
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
-    curl_setopt($ch, CURLOPT_VERBOSE, true);
-    
-    $result = curl_exec($ch);	
-    print_r($result);
-    curl_close($ch);
+    $url = "https://api.ventata.com/product/" . $product_id . "/price?ApiKey=" . $apiKey;    
+
+	curl_setopt($ch,CURLOPT_URL,$url);
+	curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+	curl_setopt($ch,CURLOPT_CONNECTTIMEOUT,$timeout);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array("accept: text/json"));
+	$data = json_decode(curl_exec($ch));
+	curl_close($ch);
+	
+	return $data->{'Price'};
 }
 
 ?>
