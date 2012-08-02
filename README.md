@@ -57,13 +57,6 @@ Response Codes:
 
 The Ventata API sends back the following standard HTTP Status codes:
 
-
-
-HTTPS
----------
-
-All traffic must be made through HTTPS.   Any calls made to HTTP will return a 404, we do not do redirects for security reasons.
-
 <table>
   <tr>
     <th>Code</th><th>AKA</th><th>Reason</th>
@@ -93,6 +86,13 @@ All traffic must be made through HTTPS.   Any calls made to HTTP will return a 4
     <td>500</td><td>server error</td><td>Did I do that?  It's something on our end.  If you're getting 500's contact our support team and we'll fix the issue.</td>
   </tr>
 </table>
+
+
+
+HTTPS
+---------
+
+All traffic must be made through HTTPS.   Any calls made to HTTP will return a 404, we do not do redirects for security reasons.
 
 
 
