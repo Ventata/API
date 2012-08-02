@@ -80,7 +80,7 @@ All traffic must be made through HTTPS.   Any calls made to HTTP will return a 4
     <td>401</td><td>unauthorized</td><td>Request received but not processed.  You aren't supposed to be here, make sure you are using the API key that is associated with the endpoint you are accessing.</td>
   </tr>
   <tr>
-    <td>402</td><td>payment required</td><td>Request received and but not processed.  We are having trouble processing your credit card, please make sure your billing information is up to date.</td>
+    <td>402</td><td>payment required</td><td>Request received but not processed.  We are having trouble processing your credit card, please make sure your billing information is up to date.</td>
   </tr>
   <tr>
     <td>404</td><td>not found</td><td>Request was not received, that resource is not in our system.</td>
