@@ -25,12 +25,13 @@ Example Code
 
 Endpoints
 -------------
-* [Stores](https://github.com/ventata/api/endpoints/stores.md)
-* [Products](https://github.com/ventata/api/endpoints/products.md)
-* [Orders](https://github.com/ventata/api/endpoints/orders.md)
-* [Company](https://github.com/ventata/api/endpoints/company.md)
-* [Users](https://github.com/ventata/api/endpoints/users.md)
-* [Billing](https://github.com/ventata/api/endpoints/billing.md)
+
+* [Stores](https://github.com/Ventata/API/blob/master/endpoints/stores.md)
+* [Products](https://github.com/Ventata/API/blob/master/endpoints/products.md)
+* [Orders](https://github.com/Ventata/API/blob/master/endpoints/orders.md)
+* [Company](https://github.com/Ventata/API/blob/master/endpoints/company.md)
+* [Users](https://github.com/Ventata/API/blob/master/endpoints/users.md)
+* [Billing](https://github.com/Ventata/API/blob/master/endpoints/billing.md)
 
 
 Authentication
@@ -39,12 +40,15 @@ Authentication
 Auth is done through an API Key on the end of the querystring.  When you first sign up, we'll send you a company API key.  With this key, you'll be able to create as many stores as you want.  Each store will get it's own unique api key returned in the response.     
 
 **When do I use the Company API Key?**
+
 When you are using Company, Stores, Users or Billing endpoints.
 
 **When do I use the Store API Key?**
+
 When you are using Products or Orders endpoints.
 
 **Why is it setup this way?**
+
 You can have many stores to a single company and we can control how much access a store API Key has, if you just had a single point of authenticating then all stores would be able to access all the other stores' data.   With the multiple API key system, if you want contractors to integrate our API into one of your sites, you can give them the relavent Store API Key for it without having to give them access to all of your other stores.
 
 

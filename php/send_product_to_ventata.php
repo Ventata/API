@@ -5,6 +5,7 @@ function send_product_to_ventata($product)
 	//enter your ventata store API key here
 	$storeApiKey = '';
 	
+	//build out the product in the data array
     $data = array(
         'Cost' => 0,
         'DateCreated' => '/Date(' . date('U', strtotime($product['products_date_added'])) . '+0000)/',
@@ -17,10 +18,12 @@ function send_product_to_ventata($product)
         'Strategy' => 'Unlimited Supply',        
     );
     
+	//encode the array in json...
     $data_string = json_encode($data);
+	
+	//and send it via curl
     $ch = curl_init();
-    $url = "https://api.ventata.com/product?ApiKey=" . $apiKey;
-    
+    $url = "https://api.ventata.com/product?ApiKey=" . $apiKey;    
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
