@@ -21,9 +21,28 @@ class VentataAPI:
 
 
 if __name__ == '__main__':
-	API_KEY = open('key').read()
 
-	ventata_api = VentataAPI(API_KEY)
+        #enter the company api key you receive after signing up with us here:
+	COMPANY_API_KEY = ''
+	
+	ventata_api = VentataAPI(COMPANY_API_KEY)
+	
+	#create a store
+	data = {
+                'Name': 'My Awesome TShirt Store',
+                'URL': 'https://myTShirtStoreOnline.com/'
+        }	
+	http_code,response_json = ventata_api.post('store', data)
+
+        #get the API key associated with your store
+	STORE_API_KEY = response_json[0]['ApiKey']
+	
+	print('Created product: (press Enter to continue)')
+	print(json.dumps(response_json, indent=4))
+	raw_input()
+
+        #use that new store API key to perform the store related requests
+	ventata_api = VentataAPI(STORE_API_KEY)
 
 	#get a store id from the first store associated with this API key
 	http_code,response_json = ventata_api.get('store')
