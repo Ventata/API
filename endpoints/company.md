@@ -1,7 +1,7 @@
 Company
 ============
 
-https://api.ventata.com/orders?ApiKey={YourCompanyAPIKey}
+https://api.ventata.com/company?ApiKey={YourCompanyAPIKey}
 
 When you sign up, a company is already created for you.   That's why we only allow update.
 
