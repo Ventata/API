@@ -13,7 +13,7 @@ Example Code
 **Java**
 
 **C#**
-* [Ventata/API/Csharp](https://github.com/Ventata/API/tree/master/C#)
+* [Ventata/API/Csharp](https://github.com/Ventata/API/tree/master/Csharp)
 
 
 **Python**
