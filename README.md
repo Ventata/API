@@ -8,16 +8,16 @@ Example Code
 -------------------------
 
 **PHP**
-* [ventata/api/php](https://github.com/Ventata/API/tree/master/php)
+* [Ventata/API/PHP](https://github.com/Ventata/API/tree/master/php)
 
 **Java**
 
 **C#**
-* [ventata/api/csharp](https://github.com/Ventata/API/tree/master/C#)
+* [Ventata/API/Csharp](https://github.com/Ventata/API/tree/master/C#)
 
 
 **Python**
-* [ventata/api/python](https://github.com/Ventata/API/tree/master/python)
+* [Ventata/API/Python](https://github.com/Ventata/API/tree/master/python)
 
 **Ruby**
 
