@@ -46,7 +46,6 @@ Endpoints
 * [Products](https://github.com/Ventata/API/blob/master/endpoints/products.md)
 * [Orders](https://github.com/Ventata/API/blob/master/endpoints/orders.md)
 * [Company](https://github.com/Ventata/API/blob/master/endpoints/company.md)
-* [Users](https://github.com/Ventata/API/blob/master/endpoints/users.md)
 * [Billing](https://github.com/Ventata/API/blob/master/endpoints/billing.md)
 
 
@@ -57,7 +56,7 @@ Auth is done through an API Key on the end of the querystring.  When you first s
 
 **When do I use the Company API Key?**
 
-When you are using Company, Stores, Users or Billing endpoints.
+When you are using Company, Stores or Billing endpoints.
 
 **When do I use the Store API Key?**
 
