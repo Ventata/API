@@ -295,7 +295,7 @@ Accept: application/json;
 
 Get Price History
 -------------------------
-To get a new price make a GET request out to the sub-resource "history":
+To get a historical prices make a GET request out to the sub-resource "history":
 
 **Request**
 <pre>
