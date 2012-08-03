@@ -47,7 +47,7 @@ Content-Type: application/json;
 
 Read
 -------------------------
-Get your company info by just call for a GET at the endpoint with your Company API Key:
+Get your company info by a GET at the endpoint with your Company API Key:
 
 **Request**
 <pre>
