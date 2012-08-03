@@ -1,8 +1,50 @@
 Stores
 ============
 
-https://api.ventata.com/products
+https://api.ventata.com/stores?ApiKey={YourCompanyAPIKey}
 
+StoreTypes
+-------------------------
+
+Store types allow us to sync up to an ecommerce platform of your choice.   If you are handling your own integration, you should choose Custom (ID: 1006).  Entering null for store type is the same as entering custom, except the OCD engineers here don't go crazy.
+
+If you are already on one of these fine ecommerce platforms then we already have that programmed for you!  Check out our integrations on your Ventata [Management](https://manage.ventata.com/) page for instant integrations.
+
+**Request**
+<pre>
+GET https://api.ventata.com/store/providers
+Content-Type: application/json;
+</pre>
+
+**Response**
+<pre>
+[
+    {
+        "Id": 1004,
+        "Name": "Magento"
+    },
+    {
+        "Id": 1005,
+        "Name": "Shopify"
+    },
+    {
+        "Id": 1006,
+        "Name": "Custom"
+    },
+    {
+        "Id": 1007,
+        "Name": "OSCommerce"
+    },
+    {
+        "Id": 1008,
+        "Name": "ZenCart"
+    },
+    {
+        "Id": 1009,
+        "Name": "WooCommerce"
+    }
+]
+</pre>
 
 Create
 -------------------------
@@ -16,7 +58,10 @@ Content-Type: application/json;
 
 {
     "Name": "My Awesome TShirt Store",
-    "StoreType": null,
+    "StoreType": {
+        "Id": 1006,
+        "Name": "Custom"
+     },
     "URL": "https://myTShirtStoreOnline.com"
 }
 </pre>
@@ -30,7 +75,10 @@ Content-Type: application/json;
     "DateModified": "/Date(1329782400000+0000)/",
     "Id": "141h55de-7776-49e2-996e-7c0cf7kc5f92",
     "Name": "My Awesome TShirt Store",
-    "StoreType": null,
+    "StoreType": {
+        "Id": 1006,
+        "Name": "Custom"
+     },
     "URL": "https://myTShirtStoreOnline.com"
 }
 </pre>
@@ -55,7 +103,10 @@ Accept: application/json;
     "DateModified": "/Date(1329782400000+0000)/",
     "Id": "141h55de-7776-49e2-996e-7c0cf7kc5f92",
     "Name": "My Awesome TShirt Store",
-    "StoreType": null,
+    "StoreType":  {
+        "Id": 1006,
+        "Name": "Custom"
+     },
     "URL": "https://myTShirtStoreOnline.com"
 }
 </pre>
@@ -63,7 +114,7 @@ Accept: application/json;
 
 Update
 -------------------------
-Update a product by sending the product in the content of a PUT request as json or xml.   In this example, we are using json.
+Update a store by sending the store data in the content of a PUT request as json or xml.   In this example, we are using json.
 
 **Request**
 <pre>
@@ -73,7 +124,10 @@ Content-Type: application/json;
 {
     "Id": "141h55de-7776-49e2-996e-7c0cf7kc5f92"
     "Name": "My Awesome TShirt Store",
-    "StoreType": null,
+    "StoreType":  {
+        "Id": 1006,
+        "Name": "Custom"
+     },
     "URL": "https://myTShirtStoreOnline.com"
 }
 </pre>
@@ -87,7 +141,10 @@ Content-Type: application/json;
     "DateModified": "/Date(1329782400000+0000)/",
     "Id": "141h55de-7776-49e2-996e-7c0cf7kc5f92",
     "Name": "My Awesome TShirt Store",
-    "StoreType": null,
+    "StoreType":  {
+        "Id": 1006,
+        "Name": "Custom"
+     },
     "URL": "https://myTShirtStoreOnline.com"
 }
 </pre>
