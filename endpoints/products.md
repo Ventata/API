@@ -1,7 +1,7 @@
 Products
 ============
 
-https://api.ventata.com/products
+https://api.ventata.com/products?ApiKey={YourStoreAPIKey}
 
 
 Dealing with Time
@@ -142,7 +142,7 @@ Update a product by sending the product in the content of a PUT request as json 
 
 **Request**
 <pre>
-PUT https://api.ventata.com/product/6ade437a85353r84979c08k58d3d9228?ApiKey={YourStoreAPIKey}
+PUT https://api.ventata.com/product?ApiKey={YourStoreAPIKey}
 Content-Type: application/json;
 
 {
@@ -151,6 +151,7 @@ Content-Type: application/json;
     "DateAvailable": "/Date(-62135596800000+0000)/",
     "DateCreated": "/Date(1338874208950+0000)/",
     "DateExpires": "/Date(-62135596800000+0000)/",
+    "Id": "6ade437a-8535-3r84-979c-08k58d3d9228",
     "Description": "The most amazing Nirvana t-shirt anyone will ever own",
     "LastEvaluation": "/Date(1338874208950+0000)/",
     "MANUCODE": "TSHIRT120",
