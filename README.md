@@ -4,6 +4,22 @@ Ventata API
 The Ventata API is a REST web service that accepts both JSON and XML. Use our API to integrate dynamic pricing into any software application you are working with.
 
 
+Overview
+-------------------------
+
+First, sign up for an API key at [Ventata.com](https://ventata.com/Ecommerce/Pricing).  
+
+The idea behind ventata is you seed your pricing model with order data then call for a new price.   As a new order comes in, send it over and we'll incorporate it into your pricing model.   Then call for a new price.  This process allows us to maximize your profits in real time.
+
+
+Sample Usage
+-------------------------
+* Digital Goods: Applications, Songs, Videos and In-Game purchases
+* Ecommerce:  Regular ecommerce, drop-ship and flash sales
+* Tickets and Events:  Use dynamic pricing to sell out your event and maximize revenue
+* Traffic & Parking:  Use dynamic pricing to control capacity
+
+
 Example Code
 -------------------------
 
