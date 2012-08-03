@@ -28,7 +28,7 @@ For more info see [Pricing Strategies](https://ventata.com/Strategies/UnlimitedS
 Other Odd Fields
 -------------------------
 
-* MinPrice & MaxPrice: (Optional) You can optionally set a minimum and maximum price.  Otherwise, just set it to zero to remove the limit.
+* MinPrice & MaxPrice: (Optional) You can set a minimum and maximum price.  Otherwise, just set it to zero to remove the limit.
 * MANUCODE: (Optional) Manufacturer's Code for your product
 * SKU:  (Optional) 
 * StoreCode:  (Optional) Mainly used for ecommerce platforms.  It's internal ID in your system, we have a few API's that you can use to reconcile the ecommerce platform and our database.  
@@ -196,7 +196,7 @@ Content-Type: application/json;
 
 Update (Partial)
 -------------------------
-To partially update a product, send the product in the content of a PUT request as json or xml to the /patch sub-resource.   In this example, we are using json.
+To partially update a product, send the product in the content of a PUT request as json or xml to the "patch" sub-resource.   In this example, we are using json.
 
 **Request**
 <pre>
@@ -249,6 +249,7 @@ Content-Length: 0
 </pre>
 
 **Response**
+
 Response will be empty.
 
 
