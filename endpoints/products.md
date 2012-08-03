@@ -1,3 +1,19 @@
+Products
+============
+https://api.ventata.com/products
+
+
+Get
+-------------------------
+Retrieving a product is as simple as passing the product id to the Product endpoint, like so:
+
+**Request**
+<pre>
+GET https://api.ventata.com/product/6ade437a85353r84979c08k58d3d9228?ApiKey={YourStoreAPIKey}
+Accept: application/json;
+</pre>
+
+**Response**
 <pre>
 {
     "CapacityBaselinePrice": 0,
@@ -11,7 +27,7 @@
     "Description": "The most amazing Nirvana t-shirt anyone will ever own",
     "ExpectedSale": "/Date(-62135596800000+0000)/",
     "ExploitUntil": "/Date(-62135596800000+0000)/",
-    "Id": "6ade437a-8535-4d84-979c-08a69d3d9228",
+    "Id": "6ade437a-8535-3r84-979c-08k58d3d9228",
     "LastEvaluation": "/Date(1343876420697+0000)/",
     "MANUCODE": "TSHIRT120",
     "MaxPrice": 0,
