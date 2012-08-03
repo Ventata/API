@@ -12,6 +12,7 @@ Update
 Update your billing info by sending the new credit card info in the content of a PUT request as json or xml.   In this example, we are using json.
 
 **Credit Card Information**
+
 **Request**
 <pre>
 POST https://api.ventata.com/Billing/CreditCard?ApiKey={YourCompanyAPIKey}
@@ -45,6 +46,7 @@ Content-Type: application/json;
 
 
 **Billing Address**
+
 **Request**
 <pre>
 POST https://api.ventata.com/Billing/CreditCard?ApiKey={YourCompanyAPIKey}
@@ -84,6 +86,7 @@ Read
 Get your company billing info by just call for a GET at the endpoint with your Company API Key:
 
 **Credit Card Information**
+
 **Request**
 <pre>
 GET https://api.ventata.com/Billing/CreditCard?ApiKey={YourCompanyAPIKey}
@@ -107,6 +110,7 @@ Accept: application/json;
 
 
 **Billing Address**
+
 **Request**
 <pre>
 GET https://api.ventata.com/Billing/Address?ApiKey={YourCompanyAPIKey}
