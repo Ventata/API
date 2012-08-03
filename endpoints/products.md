@@ -206,7 +206,7 @@ Content-Type: application/json;
 
 {
     "ColumnName": "CurrentSupply",
-    "ColumnValue": 9
+    "ColumnValue": "9"
 }
 </pre>
 
