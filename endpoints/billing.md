@@ -1,7 +1,7 @@
 Billing
 ============
 
-You can control your billing info from our API.   Things such as credit cards and billing addresses can be changed on the fly with a few API calls.
+You can control the billing info we use to charge you from our API.   Things such as credit cards and billing addresses can be changed on the fly with a few API calls.
 
 To update billing do a POST instead of a PUT, we record every change to your billing info as a separate entity for account purposes.
 
