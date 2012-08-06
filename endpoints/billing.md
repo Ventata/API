@@ -9,7 +9,7 @@ To update billing do a POST instead of a PUT, we record every change to your bil
 Update
 -------------------------
 
-Update your billing info by sending the new credit card info in the content of a PUT request as json or xml.   In this example, we are using json.
+Update your billing info by sending the new credit card info in the content of a POST request as json or xml.   In this example, we are using json.
 
 **Credit Card Information**
 
