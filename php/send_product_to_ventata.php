@@ -1,4 +1,3 @@
-
 <?php
 function send_product_to_ventata($product)
 {   
@@ -13,7 +12,7 @@ function send_product_to_ventata($product)
         'MANUCODE' => $product['products_model'],
         'Name' => $product['products_name'],
         'Price' => $product['products_price'],
-        'SKU' => product['SKU'],
+        'SKU' => $product['SKU'],
         'StoreCode' => $product['products_id'],
         'Strategy' => 'Unlimited Supply',        
     );
