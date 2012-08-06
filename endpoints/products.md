@@ -45,7 +45,7 @@ Create a product by sending the product in the content of a POST request as json
 
 **Request**
 <pre>
-POST https://api.ventata.com/product/6ade437a85353r84979c08k58d3d9228?ApiKey={YourStoreAPIKey}
+POST https://api.ventata.com/product?ApiKey={YourStoreAPIKey}
 Content-Type: application/json;
 
 {
@@ -59,7 +59,7 @@ Content-Type: application/json;
     "MANUCODE": "TSHIRT120",
     "MaxPrice": 0,
     "MinPrice": 0,
-    "Name": "New testing",
+    "Name": "New test product",
     "Price": 10,
     "SKU": "SHIRT-1",
     "StartingSupply": 10,
@@ -86,7 +86,7 @@ Content-Type: application/json;
     "MANUCODE": "TSHIRT120",
     "MaxPrice": 0,
     "MinPrice": 0,
-    "Name": "New testing",
+    "Name": "New test product",
     "Price": 10,
     "SKU": "SHIRT-1",
     "StartingSupply": 10,
@@ -94,6 +94,110 @@ Content-Type: application/json;
     "StoreId": "141f55de-7776-49e2-996e-7c0cfc6c5f92",
     "Strategy": "Unlimited Supply"
 }
+</pre>
+
+Create Many (Array of Products)
+-------------------------
+
+To create many products in our system, send an array of products in the content of a POST request as json or xml to the subresource "list".   In this example, we are using json.
+
+**Request**
+<pre>
+POST https://api.ventata.com/product/list?ApiKey={YourStoreAPIKey}
+Content-Type: application/json;
+
+[
+    {
+        "Cost": 4.5,
+        "CurrentSupply": 10,
+        "DateAvailable": "/Date(-62135596800000+0000)/",
+        "DateCreated": "/Date(1338874208950+0000)/",
+        "DateExpires": "/Date(-62135596800000+0000)/",
+        "Description": "The most amazing Nirvana t-shirt anyone will ever own",
+        "LastEvaluation": "/Date(1338874208950+0000)/",
+        "MANUCODE": "TSHIRT120",
+        "MaxPrice": 0,
+        "MinPrice": 0,
+        "Name": "New test product",
+        "Price": 10,
+        "SKU": "SHIRT-1",
+        "StartingSupply": 10,
+        "StoreId": "37a3c415-d292-4e76-8ec5-05288e279266",
+        "Strategy": "Unlimited Supply"
+    },
+    {
+        "Cost": 4.5,
+        "CurrentSupply": 10,
+        "DateAvailable": "/Date(-62135596800000+0000)/",
+        "DateCreated": "/Date(1338874208950+0000)/",
+        "DateExpires": "/Date(-62135596800000+0000)/",
+        "Description": "The second most amazing Nirvana t-shirt anyone will ever own",
+        "LastEvaluation": "/Date(1338874208950+0000)/",
+        "MANUCODE": "TSHIRT121",
+        "MaxPrice": 0,
+        "MinPrice": 0,
+        "Name": "New test product again",
+        "Price": 10,
+        "SKU": "SHIRT-2",
+        "StartingSupply": 10,
+        "StoreId": "37a3c415-d292-4e76-8ec5-05288e279266",
+        "Strategy": "Unlimited Supply"
+    }
+]
+</pre>
+
+**Response**
+<pre>
+[
+    {
+        "CapacityBaselinePrice": 0,
+        "CapacityCurb": 0,
+        "Cost": 4.5,
+        "CurrentSupply": 10,
+        "DateAvailable": "/Date(-62135596800000+0000)/",
+        "DateCreated": "/Date(1343876420697+0000)/",
+        "DateExpires": "/Date(-62135596800000+0000)/",
+        "Description": "The most amazing Nirvana t-shirt anyone will ever own",
+        "ExpectedSale": "/Date(-62135596800000+0000)/",
+        "ExploitUntil": "/Date(-62135596800000+0000)/",
+        "Id": "6ade437a-8535-3r84-979c-08k58d3d9228",
+        "LastEvaluation": "/Date(1343876420697+0000)/",
+        "MANUCODE": "TSHIRT120",
+        "MaxPrice": 0,
+        "MinPrice": 0,
+        "Name": "New test product",
+        "Price": 10,
+        "SKU": "SHIRT-1",
+        "StartingSupply": 10,
+        "StoreCode": null,
+        "StoreId": "141f55de-7776-49e2-996e-7c0cfc6c5f92",
+        "Strategy": "Unlimited Supply"
+    },
+    {
+        "CapacityBaselinePrice": 0,
+        "CapacityCurb": 0,
+        "Cost": 4.5,
+        "CurrentSupply": 10,
+        "DateAvailable": "/Date(-62135596800000+0000)/",
+        "DateCreated": "/Date(1343876420697+0000)/",
+        "DateExpires": "/Date(-62135596800000+0000)/",
+        "Description": "The second most amazing Nirvana t-shirt anyone will ever own",
+        "ExpectedSale": "/Date(-62135596800000+0000)/",
+        "ExploitUntil": "/Date(-62135596800000+0000)/",
+        "Id": "5667a51d-a0a7-433b-8ee0-3fd7cd95e60b",
+        "LastEvaluation": "/Date(1343876420697+0000)/",
+        "MANUCODE": "TSHIRT121",
+        "MaxPrice": 0,
+        "MinPrice": 0,
+        "Name": "New test product again",
+        "Price": 10,
+        "SKU": "SHIRT-2",
+        "StartingSupply": 10,
+        "StoreCode": null,
+        "StoreId": "141f55de-7776-49e2-996e-7c0cfc6c5f92",
+        "Strategy": "Unlimited Supply"
+    }
+]
 </pre>
 
 
@@ -125,7 +229,7 @@ Accept: application/json;
     "MANUCODE": "TSHIRT120",
     "MaxPrice": 0,
     "MinPrice": 0,
-    "Name": "New testing",
+    "Name": "New test product",
     "Price": 10,
     "SKU": "SHIRT-1",
     "StartingSupply": 10,
@@ -157,7 +261,7 @@ Content-Type: application/json;
     "MANUCODE": "TSHIRT120",
     "MaxPrice": 0,
     "MinPrice": 0,
-    "Name": "New testing",
+    "Name": "New test product",
     "Price": 10,
     "SKU": "SHIRT-1",
     "StartingSupply": 10,
@@ -184,7 +288,7 @@ Content-Type: application/json;
     "MANUCODE": "TSHIRT120",
     "MaxPrice": 0,
     "MinPrice": 0,
-    "Name": "New testing",
+    "Name": "New test product",
     "Price": 10,
     "SKU": "SHIRT-1",
     "StartingSupply": 10,
@@ -228,7 +332,7 @@ Content-Type: application/json;
     "MANUCODE": "TSHIRT120",
     "MaxPrice": 0,
     "MinPrice": 0,
-    "Name": "New testing",
+    "Name": "New test product",
     "Price": 10,
     "SKU": "SHIRT-1",
     "StartingSupply": 10,
@@ -282,7 +386,7 @@ Accept: application/json;
     "MANUCODE": "TSHIRT120",
     "MaxPrice": 0,
     "MinPrice": 0,
-    "Name": "New testing",
+    "Name": "New test product",
     "Price": 10.23,
     "SKU": "SHIRT-1",
     "StartingSupply": 10,
