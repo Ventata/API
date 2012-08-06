@@ -18,7 +18,7 @@ Create an order by sending the order info in the content of a POST request as js
 
 **Request**
 <pre>
-POST https://api.ventata.com/product/6ade437a85353r84979c08k58d3d9228?ApiKey={YourStoreAPIKey}
+POST https://api.ventata.com/order?ApiKey={YourStoreAPIKey}
 Content-Type: application/json;
 
 {
@@ -78,6 +78,130 @@ Content-Type: application/json;
     "Taxes": 0,
     "TotalPrice": 27.95
 }
+</pre>
+
+
+Create Many (Array of Orders)
+-------------------------
+
+To create many orders in our system, send an array of orders in the content of a POST request as json or xml to the subresource "list".   In this example, we are using json.
+
+**Request**
+<pre>
+POST https://api.ventata.com/order/list?ApiKey={YourStoreAPIKey}
+Content-Type: application/json;
+[
+    {
+        "DateCreated": "/Date(1339205240+0000)/",
+        "ExternalOrderId": "1260",
+        "OrderDetails": [
+            {
+                "CostPerItem": 4.96,
+                "PricePaid": 12.96,
+                "ProductId": "6ade437a-8535-3r84-979c-08k58d3d9228",
+                "Quantity": 1
+            },
+            {
+                "CostPerItem": 5.99,
+                "PricePaid": 14.99,
+                "ProductId": "7arb437a-8147-3g34-409c-08m12d3d5428",
+                "Quantity": 1
+            }
+        ],
+        "ShippingCost": 0,
+        "SubTotal": 27.95,
+        "Taxes": 0,
+        "TotalPrice": 27.95
+    },
+    {
+        "DateCreated": "/Date(1339205240+0000)/",
+        "ExternalOrderId": "1261",
+        "OrderDetails": [
+            {
+                "CostPerItem": 4.96,
+                "PricePaid": 14.96,
+                "ProductId": "6ade437a-8535-3r84-979c-08k58d3d9228",
+                "Quantity": 1
+            },
+            {
+                "CostPerItem": 5.99,
+                "PricePaid": 16.99,
+                "ProductId": "7arb437a-8147-3g34-409c-08m12d3d5428",
+                "Quantity": 1
+            }
+        ],
+        "ShippingCost": 0,
+        "SubTotal": 31.95,
+        "Taxes": 0,
+        "TotalPrice": 31.95
+    }
+]
+</pre>
+
+**Response**
+<pre>
+[
+    {
+        "DateCreated": "/Date(1339205240+0000)/",
+        "ExternalOrderId": "1260",
+        "Id": "0c1f8d21-e9d9-417a-9e0f-009578b8d439",
+        "OrderDetails": [
+            {
+                "CostPerItem": 4.96,
+                "Id": "f6cf2460-0f19-47bb-afea-38e1d66bf3b7",
+                "ManuCode": "",
+                "OrderId": "0c1f8d21-e9d9-417a-9e0f-009578b8d439",
+                "PricePaid": 12.96,
+                "ProductId": "6ade437a-8535-3r84-979c-08k58d3d9228",
+                "Quantity": 1
+            },
+            {
+                "CostPerItem": 5.99,
+                "Id": "cf471737-a71c-4bff-8182-452ae663a46a",
+                "ManuCode": "",
+                "OrderId": "0c1f8d21-e9d9-417a-9e0f-009578b8d439",
+                "PricePaid": 14.99,
+                "ProductId": "7arb437a-8147-3g34-409c-08m12d3d5428",
+                "Quantity": 1
+            }
+        ],
+        "ShippingCost": 0,
+        "StoreId": "141f55de-7776-49e2-996e-7c0cfc6c5f92",
+        "SubTotal": 27.95,
+        "Taxes": 0,
+        "TotalPrice": 27.95
+    },
+    {
+        "DateCreated": "/Date(1339205240+0000)/",
+        "ExternalOrderId": "1260",
+        "Id": "85630cc2-3082-4836-bf97-8cc9055d651f",
+        "OrderDetails": [
+            {
+                "CostPerItem": 4.96,
+                "Id": "f6cf2460-0f19-47bb-afea-38e1d66bf3b7",
+                "ManuCode": "",
+                "OrderId": "85630cc2-3082-4836-bf97-8cc9055d651f",
+                "PricePaid": 14.96,
+                "ProductId": "6ade437a-8535-3r84-979c-08k58d3d9228",
+                "Quantity": 1
+            },
+            {
+                "CostPerItem": 5.99,
+                "Id": "cf471737-a71c-4bff-8182-452ae663a46a",
+                "ManuCode": "",
+                "OrderId": "85630cc2-3082-4836-bf97-8cc9055d651f",
+                "PricePaid": 16.99,
+                "ProductId": "7arb437a-8147-3g34-409c-08m12d3d5428",
+                "Quantity": 1
+            }
+        ],
+        "ShippingCost": 0,
+        "StoreId": "141f55de-7776-49e2-996e-7c0cfc6c5f92",
+        "SubTotal": 31.95,
+        "Taxes": 0,
+        "TotalPrice": 31.95
+    }
+]
 </pre>
 
 
