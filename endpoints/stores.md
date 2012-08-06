@@ -53,7 +53,7 @@ Create a store by sending the store in the content of a POST request as json or 
 
 **Request**
 <pre>
-POST https://api.ventata.com/store/6ade437a85353r84979c08k58d3d9228?ApiKey={YourCompanyAPIKey}
+POST https://api.ventata.com/store?ApiKey={YourCompanyAPIKey}
 Content-Type: application/json;
 
 {
