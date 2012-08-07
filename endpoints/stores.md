@@ -3,10 +3,10 @@ Stores
 
 https://api.ventata.com/stores?ApiKey={YourCompanyAPIKey}
 
-StoreTypes
+Store Providers
 -------------------------
 
-Store types allow us to sync up to an ecommerce platform of your choice.   If you are handling your own integration, you should choose Custom (ID: 1006).  Entering null for store type is the same as entering custom, except the OCD engineers here don't go crazy.
+Store providers allow us to sync up to an ecommerce platform of your choice.   If you are handling your own integration, you should choose Custom (ID: 1006).  Entering null for store type is the same as entering custom, except the OCD engineers here don't go crazy.
 
 If you are already on one of these fine ecommerce platforms then we already have that programmed for you!  Check out our integrations on your Ventata [Management](https://manage.ventata.com/) page for instant integrations.
 
@@ -42,6 +42,18 @@ Content-Type: application/json;
     {
         "Id": 1009,
         "Name": "WooCommerce"
+    },
+    {
+        "Id": 1010,
+        "Name": "PrestaShop"
+    },
+    {
+        "Id": 1011,
+        "Name": "Volusion"
+    },
+    {
+        "Id": 1012,
+        "Name": "BigCommerce"
     }
 ]
 </pre>
