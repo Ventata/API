@@ -88,7 +88,6 @@ namespace VentataSampleApplication
             using (StringReader stringReader = new StringReader(jsonResponse))
             {
                 var jsonObject = JsonValue.Load(stringReader);
-                List<Guid> uniqueProducts = new List<Guid>();
                 var storeInfo = jsonObject.AsDynamic();
 
                 //Set the store api key with the response
@@ -109,7 +108,6 @@ namespace VentataSampleApplication
             using (StringReader stringReader = new StringReader(jsonResponse))
             {
                 var jsonObject = JsonValue.Load(stringReader);
-                List<Guid> uniqueProducts = new List<Guid>();
                 var productInfo = jsonObject.AsDynamic();
 
                 return productInfo.Id;
@@ -129,7 +127,6 @@ namespace VentataSampleApplication
             using (StringReader stringReader = new StringReader(jsonResponse))
             {
                 var jsonObject = JsonValue.Load(stringReader);
-                List<Guid> uniqueProducts = new List<Guid>();
                 var orderInfo = jsonObject.AsDynamic();
 
                 return orderInfo.Id;
@@ -149,7 +146,6 @@ namespace VentataSampleApplication
             using (StringReader stringReader = new StringReader(jsonResponse))
             {
                 var jsonObject = JsonValue.Load(stringReader);
-                List<Guid> uniqueProducts = new List<Guid>();
                 var productInfo = jsonObject.AsDynamic();
 
                 return Convert.ToDecimal(productInfo.Price);
