@@ -27,7 +27,7 @@ Example Code
 * [Ventata/API/PHP](https://github.com/Ventata/API/tree/master/php)
 
 **Java**
-* [Ventata/API/Csharp](https://github.com/Ventata/API/tree/master/java)
+* [Ventata/API/java](https://github.com/Ventata/API/tree/master/java)
 
 **C#**
 * [Ventata/API/Csharp](https://github.com/Ventata/API/tree/master/csharp)
