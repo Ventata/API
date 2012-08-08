@@ -101,6 +101,8 @@ Create Many (Array of Products)
 
 To create many products in our system, send an array of products in the content of a POST request as json or xml to the subresource "list".   In this example, we are using json.
 
+Do not send more than 50 products in a single call.   Break them up into multiple calls.
+
 **Request**
 <pre>
 POST https://api.ventata.com/product/list?ApiKey={YourStoreAPIKey}
