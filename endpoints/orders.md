@@ -86,6 +86,8 @@ Create Many (Array of Orders)
 
 To create many orders in our system, send an array of orders in the content of a POST request as json or xml to the subresource "list".   In this example, we are using json.
 
+Do not send more than 50 orders in a single call.   Break them up into multiple calls.
+
 **Request**
 <pre>
 POST https://api.ventata.com/order/list?ApiKey={YourStoreAPIKey}
