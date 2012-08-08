@@ -102,7 +102,7 @@ Get a store by adding the store id to the endpoint:
 
 **Request**
 <pre>
-GET https://api.ventata.com/store/141h55de777649e2996e7c0cf7kc5f92?ApiKey={YourStoreAPIKey}
+GET https://api.ventata.com/store/141h55de777649e2996e7c0cf7kc5f92?ApiKey={YourCompanyAPIKey}
 Accept: application/json;
 </pre>
 
@@ -130,7 +130,7 @@ Update a store by sending the store data in the content of a PUT request as json
 
 **Request**
 <pre>
-PUT https://api.ventata.com/product?ApiKey={YourStoreAPIKey}
+PUT https://api.ventata.com/product?ApiKey={YourCompanyAPIKey}
 Content-Type: application/json;
 
 {
@@ -168,7 +168,7 @@ Delete a store by sending a DELETE request with the store id in the querystring:
 
 **Request**
 <pre>
-DELETE https://api.ventata.com/store/141h55de-7776-49e2-996e-7c0cf7kc5f92?ApiKey={YourStoreAPIKey}
+DELETE https://api.ventata.com/store/141h55de-7776-49e2-996e-7c0cf7kc5f92?ApiKey={YourCompanyAPIKey}
 Content-Length: 0
 </pre>
 
