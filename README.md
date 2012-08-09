@@ -15,7 +15,7 @@ The idea behind ventata is you seed your pricing model with order data then call
 When should you use Dynamic Pricing?
 -------------------------
 * Digital Goods: Applications, Songs, Videos and In-Game purchases
-* Ecommerce:  Regular ecommerce, drop-ship and flash sales
+* Ecommerce:  Price competitive markets, drop-ship, flash sales or when you have a unique product like a hand-made item
 * Tickets and Events:  Use dynamic pricing to sell out your event and maximize revenue
 * Traffic & Parking:  Use dynamic pricing to control capacity
 
