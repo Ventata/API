@@ -209,7 +209,7 @@ Content-Type: application/json;
 
 Read
 -------------------------
-Retrieving a product is as simple as passing the product id to the Product endpoint:
+Retrieving an order is as simple as passing the order id to the Order endpoint:
 
 **Request**
 <pre>
@@ -256,7 +256,7 @@ Accept: application/json;
 
 Delete
 -------------------------
-Delete a product by sending a DELETE request with the product id in the querystring:
+Delete an order by sending a DELETE request with the order id in the querystring:
 
 **Request**
 <pre>
