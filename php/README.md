@@ -12,3 +12,6 @@ cURL Library
 
 * http://curl.haxx.se/	
 * http://php.net/manual/en/book.curl.php
+
+
+Author:  [Can Ince](https://github.com/logikit)
