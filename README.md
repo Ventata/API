@@ -12,7 +12,7 @@ First, sign up for an API key at [Ventata.com](https://ventata.com/Ecommerce/Pri
 The idea behind ventata is you seed your pricing model with order data then call for a new price.   As a new order comes in, send it over and we'll incorporate it into your pricing model.   Then call for a new price.  This process allows us to maximize your profits in real time.
 
 
-Sample Usage
+When should you use Dynamic Pricing?
 -------------------------
 * Digital Goods: Applications, Songs, Videos and In-Game purchases
 * Ecommerce:  Regular ecommerce, drop-ship and flash sales
