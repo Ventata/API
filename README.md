@@ -19,6 +19,8 @@ When should you use Dynamic Pricing?
 * Tickets and Events:  Use dynamic pricing to sell out your event and maximize revenue
 * Traffic & Parking:  Use dynamic pricing to control capacity
 
+If you're building a store or application that sells one of these items, you can incorporate ventata into the order process to maximize your profits.
+
 
 Example Code
 -------------------------
