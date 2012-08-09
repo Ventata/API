@@ -1,7 +1,7 @@
 PHP Sample Code for Ventata API
 =======
 
-The 4 functions provided above are the most common functions used by clients.   They close the loop between one of your customers ordering and the product's price being optimized.
+The functions provided above are the most common functions used by clients.   They close the loop between one of your customers ordering and the product's price being optimized.
 
 cURL Library
 -----------
