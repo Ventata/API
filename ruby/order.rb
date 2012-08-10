@@ -25,7 +25,6 @@ class Order
     request = Net::HTTP::Post.new(url.request_uri)
     http  = Net::HTTP.new(url.host, url.port) 
     http.use_ssl = true
-    http.verify_mode = OpenSSL::SSL::VERIFY_NONE
     request.content_type = 'application/json'
     request.body = jsondata.to_s
     #request["Accept"] = 'application/json'
@@ -45,7 +44,6 @@ class Order
     request = Net::HTTP::Post.new(url.request_uri)
     http  = Net::HTTP.new(url.host, url.port) 
     http.use_ssl = true
-    http.verify_mode = OpenSSL::SSL::VERIFY_NONE
     request.content_type = 'application/json'
     request.body = jsondata.to_s
     #request["Accept"] = 'application/json'
@@ -64,7 +62,6 @@ class Order
      request = Net::HTTP::Get.new(url.request_uri)
      http  = Net::HTTP.new(url.host, url.port) 
      http.use_ssl = true
-     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
      request["Accept"] = 'application/json' #You have to set this field in request header in order to obtain 
                                            #respose as JSON
      response=http.start do |h| 
@@ -80,7 +77,6 @@ class Order
      request = Net::HTTP::Delete.new(url.request_uri)
      http  = Net::HTTP.new(url.host, url.port) 
      http.use_ssl = true
-     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
      request["Content-Length"]="0";
      request["Content_Length"]="0";
      response=http.start do |h| 
