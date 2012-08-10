@@ -111,7 +111,6 @@ class Product
      http  = Net::HTTP.new(url.host, url.port) 
      http.use_ssl = true
      request["Content-Length"]="0";
-     request["Content_Length"]="0";
      response=http.start do |h| 
         h.request(request) 
       end
