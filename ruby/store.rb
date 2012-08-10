@@ -29,7 +29,7 @@ class Store
     http.use_ssl = true
     request.content_type = 'application/json'
     request.body = jsondata.to_s
-    #request["Accept"] = 'application/json'
+    request["Accept"] = 'application/json'
     response=http.start do |h| 
         h.request(request) 
       end
@@ -50,7 +50,7 @@ class Store
     http.use_ssl = true
     request.content_type = 'application/json'
     request.body = jsondata.to_s
-    #request["Accept"] = 'application/json'
+    request["Accept"] = 'application/json'
     response=http.start do |h| 
         h.request(request) 
       end
@@ -84,9 +84,7 @@ class Store
     request = Net::HTTP::Get.new(url.request_uri)
     http  = Net::HTTP.new(url.host, url.port) 
     http.use_ssl = true
-    request.content_type = 'application/json'
-
-    #request["Accept"] = 'application/json'
+    request["Accept"] = 'application/json'
     response=http.start do |h| 
         h.request(request) 
       end
