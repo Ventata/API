@@ -3,7 +3,7 @@ Ruby Wrapper for Ventata API
 Use this Ventata Client in your Ruby application to easily access the Ventata REST API.
 
 
-Requests Library
+Ruby JSON Library
 -----------
 
 * `gem install 'json'` to install json library
