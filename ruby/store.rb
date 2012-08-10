@@ -79,8 +79,8 @@ class Store
 #------------------------------------------------------------------------------------ 
 
  
-   def self.all(apiKey)  #Retrieved all store provide data
-    url = URI.parse((BASEURI+ "/providers"))
+   def self.all(apiKey)  #Retrieved all store data
+    url = URI.parse((BASEURI+"/?ApiKey=#{apiKey}"))
     request = Net::HTTP::Get.new(url.request_uri)
     http  = Net::HTTP.new(url.host, url.port) 
     http.use_ssl = true
