@@ -29,17 +29,16 @@ Example Code
 * [Ventata/API/PHP](https://github.com/Ventata/API/tree/master/php)
 
 **Java**
-* [Ventata/API/java](https://github.com/Ventata/API/tree/master/java)
+* [Ventata/API/Java](https://github.com/Ventata/API/tree/master/java)
 
 **C#**
 * [Ventata/API/Csharp](https://github.com/Ventata/API/tree/master/csharp)
-
 
 **Python**
 * [Ventata/API/Python](https://github.com/Ventata/API/tree/master/python)
 
 **Ruby**
-
+* [Ventata/API/Ruby](https://github.com/Ventata/API/tree/master/ruby)
 
 
 Endpoints
