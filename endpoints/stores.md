@@ -58,6 +58,40 @@ Content-Type: application/json;
 ]
 </pre>
 
+Currencies
+-------------------------
+
+Currency is set on a store level.   If you make a GET request to the currencies API (no API Key needed) you'll get a list of all active currencies we support.
+
+Set the store "CurrencyCode" property with your currency code.
+
+If you don't set currency, we'll default it to USD.
+
+**Request**
+<pre>
+GET https://api.ventata.com/currencies
+Content-Type: application/json;
+</pre>
+
+**Response**
+For GitHub, I've abbreviated the response. Please do a GET request to get an updated list.
+<pre>
+[
+    {
+        "Code": "EUR",
+        "Name": "Euro"
+    },
+    {
+        "Code": "USD",
+        "Name": "US Dollar"
+    },
+    {
+        "Code": "CAD",
+        "Name": "Canadian Dollar"
+    },
+]
+</pre>
+
 Create
 -------------------------
 
@@ -74,7 +108,8 @@ Content-Type: application/json;
         "Id": 1006,
         "Name": "Custom"
      },
-    "URL": "https://myTShirtStoreOnline.com"
+    "URL": "https://myTShirtStoreOnline.com",
+    "CurrencyCode": "USD"
 }
 </pre>
 
@@ -91,7 +126,8 @@ Content-Type: application/json;
         "Id": 1006,
         "Name": "Custom"
      },
-    "URL": "https://myTShirtStoreOnline.com"
+    "URL": "https://myTShirtStoreOnline.com",
+    "CurrencyCode": "USD"
 }
 </pre>
 
@@ -119,7 +155,8 @@ Accept: application/json;
         "Id": 1006,
         "Name": "Custom"
      },
-    "URL": "https://myTShirtStoreOnline.com"
+    "URL": "https://myTShirtStoreOnline.com",
+    "CurrencyCode": "USD"
 }
 </pre>
 
@@ -157,7 +194,8 @@ Content-Type: application/json;
         "Id": 1006,
         "Name": "Custom"
      },
-    "URL": "https://myTShirtStoreOnline.com"
+    "URL": "https://myTShirtStoreOnline.com",
+    "CurrencyCode": "USD"
 }
 </pre>
 
