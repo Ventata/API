@@ -89,7 +89,7 @@ For GitHub, I've abbreviated the response. Please do a GET request to get an upd
         "Code": "CAD",
         "Name": "Canadian Dollar"
     },
-]
+    ...
 </pre>
 
 Create
