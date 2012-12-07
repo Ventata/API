@@ -12,7 +12,17 @@ namespace VentataSampleApplication
         public SampleApplication()
         {
             //1.  Create a store with your company API key you get at signup
-            CreateStore(VentataCompanyAPIKey);
+            string storeInfo = @"{
+                                       ""Name"": ""My Awesome TShirt Store"",
+                                       ""StoreType"": {
+                                             ""Id"": 1006,
+                                             ""Name"": ""Custom""
+                                       },
+                                       ""URL"": ""https://myTShirtStoreOnline.com"",
+                                       ""CurrencyCode"": ""USD""
+                                 }";
+
+            CreateStore(storeInfo);
 
             //2.  Create a product
             string productInfo = @"{
