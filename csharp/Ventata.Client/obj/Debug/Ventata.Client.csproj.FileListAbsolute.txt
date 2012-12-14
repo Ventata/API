@@ -1,0 +1,9 @@
+c:\users\ldavis\documents\visual studio 2010\Projects\VentataClientLibrary\Ventata.Client\obj\Debug\ResolveAssemblyReference.cache
+c:\users\ldavis\documents\visual studio 2010\Projects\VentataClientLibrary\Ventata.Client\bin\Debug\Ventata.Client.dll
+c:\users\ldavis\documents\visual studio 2010\Projects\VentataClientLibrary\Ventata.Client\bin\Debug\Ventata.Client.pdb
+c:\users\ldavis\documents\visual studio 2010\Projects\VentataClientLibrary\Ventata.Client\bin\Debug\Domain.dll
+c:\users\ldavis\documents\visual studio 2010\Projects\VentataClientLibrary\Ventata.Client\bin\Debug\System.Runtime.Serialization.dll
+c:\users\ldavis\documents\visual studio 2010\Projects\VentataClientLibrary\Ventata.Client\bin\Debug\System.Web.dll
+c:\users\ldavis\documents\visual studio 2010\Projects\VentataClientLibrary\Ventata.Client\bin\Debug\Domain.pdb
+c:\users\ldavis\documents\visual studio 2010\Projects\VentataClientLibrary\Ventata.Client\obj\Debug\Ventata.Client.dll
+c:\users\ldavis\documents\visual studio 2010\Projects\VentataClientLibrary\Ventata.Client\obj\Debug\Ventata.Client.pdb

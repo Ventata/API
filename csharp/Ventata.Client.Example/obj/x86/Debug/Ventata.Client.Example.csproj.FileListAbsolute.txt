@@ -1,0 +1,10 @@
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client.Example\bin\Debug\Ventata.Client.Example.exe.config
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client.Example\bin\Debug\Ventata.Client.Example.exe
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client.Example\bin\Debug\Ventata.Client.Example.pdb
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client.Example\bin\Debug\Domain.dll
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client.Example\bin\Debug\Ventata.Client.dll
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client.Example\bin\Debug\Domain.pdb
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client.Example\bin\Debug\Ventata.Client.pdb
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client.Example\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client.Example\obj\x86\Debug\Ventata.Client.Example.exe
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client.Example\obj\x86\Debug\Ventata.Client.Example.pdb

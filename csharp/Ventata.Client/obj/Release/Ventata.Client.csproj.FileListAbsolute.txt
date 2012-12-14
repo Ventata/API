@@ -1,0 +1,9 @@
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client\bin\Release\Ventata.Client.dll
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client\bin\Release\Ventata.Client.pdb
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client\bin\Release\Domain.dll
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client\bin\Release\System.Runtime.Serialization.dll
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client\bin\Release\System.Web.dll
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client\bin\Release\Domain.pdb
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client\obj\Release\ResolveAssemblyReference.cache
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client\obj\Release\Ventata.Client.dll
+C:\Users\LDavis\Documents\Visual Studio 2010\Projects\VentataClientLibrary\Ventata.Client\obj\Release\Ventata.Client.pdb

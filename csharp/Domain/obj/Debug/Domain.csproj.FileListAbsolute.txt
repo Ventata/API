@@ -1,0 +1,5 @@
+c:\users\ldavis\documents\visual studio 2010\Projects\VentataClientLibrary\Domain\obj\Debug\ResolveAssemblyReference.cache
+c:\users\ldavis\documents\visual studio 2010\Projects\VentataClientLibrary\Domain\bin\Debug\Domain.dll
+c:\users\ldavis\documents\visual studio 2010\Projects\VentataClientLibrary\Domain\bin\Debug\Domain.pdb
+c:\users\ldavis\documents\visual studio 2010\Projects\VentataClientLibrary\Domain\obj\Debug\Domain.dll
+c:\users\ldavis\documents\visual studio 2010\Projects\VentataClientLibrary\Domain\obj\Debug\Domain.pdb
