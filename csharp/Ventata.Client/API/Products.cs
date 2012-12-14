@@ -73,7 +73,7 @@ namespace Ventata.Client.API
             return productWithId;
         }
 
-        public bool Delete(string VentataProductId)
+        public bool Delete(Guid VentataProductId)
         {
             //We added a simple try/catch to give some feedback if the call didn't go through
             //I would expand this section to add your own exception handling
