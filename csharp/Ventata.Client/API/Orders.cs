@@ -26,7 +26,7 @@ namespace Ventata.Client.API
             return orderWithId;
         }
 
-        public VentataOrder Get(string VentataOrderId)
+        public VentataOrder Get(Guid VentataOrderId)
         {
             VentataOrder orderWithId = RestHelper.CallResource(
                 "GET", String.Format("{0}/{1}?ApiKey={2}", 
