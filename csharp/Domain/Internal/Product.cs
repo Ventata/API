@@ -5,6 +5,8 @@ using System.Text;
 
 namespace Domain.Internal
 {
+    // You'll want to edit this to make it look like your Product entity
+    // or just go ahead and directly use your Product object
     public class Product
     {
         public int Id { get; set; }
