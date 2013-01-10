@@ -5,6 +5,8 @@ using System.Text;
 
 namespace Domain.Internal
 {
+    // You'll want to edit this to make it look like your Order entity
+    // or just go ahead and directly use your Order object
     public class Order
     {
         public int Id { get; set; }
