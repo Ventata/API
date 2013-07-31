@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="External\PricingStrategy.cs" />
     <Compile Include="External\VentataOrder.cs" />
     <Compile Include="External\VentataProduct.cs" />
     <Compile Include="External\VentataStore.cs" />

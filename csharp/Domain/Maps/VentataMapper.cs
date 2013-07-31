@@ -56,7 +56,7 @@ namespace Domain.Maps
         /// <param name="DateAvailable">[Limited Supply Only] When will the sale start?</param>
         /// <param name="DateExpires">[Limited Supply Only] When will the sale end?</param>
         /// <returns></returns>
-        public static VentataProduct ConvertProduct(Product product, PricingStrategy strategy, DateTime? DateAvailable = null, DateTime? DateExpires = null)
+        public static VentataProduct ConvertProduct(Product product, string strategy, DateTime? DateAvailable = null, DateTime? DateExpires = null)
         {
             VentataProduct productToReturn = new VentataProduct();
 

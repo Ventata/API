@@ -70,8 +70,15 @@ namespace Ventata.Client.Example
                 Price = 10
             };
 
-            //Use the mapper and pick your pricing strategy
-            VentataProduct vProduct = VentataMapper.ConvertProduct(prod, PricingStrategy.UnlimitedSupply);
+            //Use the mapper and pick your pricing strategy:            
+            //UnlimitedSupply
+            //LimitedSupply
+            //CapacityControl
+            //Appointments
+            //RazorPrice
+            //Off
+
+            VentataProduct vProduct = VentataMapper.ConvertProduct(prod, "UnlimitedSupply");
 
             //Send product to Ventata
             vProduct = ventataProductAPI.Create(vProduct);
